@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <!-- <strong class="bg-blue-900 text-white absolute  z-1">CALC</strong> -->
+    <div class="container rounded-lg bg-slate-950 size-auto scale-150 absolute left-1/2 top-1/2 -translate-1/2 flex flex-col justify-around">
+        <div class="p-2 w-full">
+            <input type="text" class="rounded bg-slate-200 m-auto w-full p-3 font-semibold" id="output" disabled />
+        </div>
+        <div class="flex justify-around p-2">
+            <button class="text-white font-bold size-11 bg-red-700 rounded cursor-pointer hover:scale-105 duration-100" id="clear">
+          C
+        </button>
+            <button class="text-white font-bold size-11 bg-gray-400 rounded cursor-pointer hover:scale-105 duration-100">
+          (
+        </button>
+            <button class="text-white font-bold size-11 bg-gray-400 rounded cursor-pointer hover:scale-105 duration-100">
+          )
+        </button>
+            <button class="text-white font-bold size-11 bg-orange-400 rounded cursor-pointer hover:scale-105 duration-100">
+          /
+        </button>
+        </div>
+
+        <div class="flex justify-around p-2">
+            <button class="text-white font-bold size-11 bg-green-600 rounded cursor-pointer hover:scale-105 duration-100">
+          7
+        </button>
+            <button class="text-white font-bold size-11 bg-green-600 rounded cursor-pointer hover:scale-105 duration-100">
+          8
+        </button>
+            <button class="text-white font-bold size-11 bg-green-600 rounded cursor-pointer hover:scale-105 duration-100">
+          9
+        </button>
+            <button class="text-white font-bold size-11 bg-orange-400 rounded cursor-pointer hover:scale-105 duration-100">
+          *
+        </button>
+        </div>
+
+        <div class="flex justify-around p-2">
+            <button class="text-white font-bold size-11 bg-green-600 rounded cursor-pointer hover:scale-105 duration-100">
+          4
+        </button>
+            <button class="text-white font-bold size-11 bg-green-600 rounded cursor-pointer hover:scale-105 duration-100">
+          5
+        </button>
+            <button class="text-white font-bold size-11 bg-green-600 rounded cursor-pointer hover:scale-105 duration-100">
+          6
+        </button>
+            <button class="text-white font-bold size-11 bg-orange-400 rounded cursor-pointer hover:scale-105 duration-100">
+          +
+        </button>
+        </div>
+
+        <div class="flex justify-around p-2">
+            <button class="text-white font-bold size-11 bg-green-600 rounded cursor-pointer hover:scale-105 duration-100">
+          1
+        </button>
+            <button class="text-white font-bold size-11 bg-green-600 rounded cursor-pointer hover:scale-105 duration-100">
+          2
+        </button>
+            <button class="text-white font-bold size-11 bg-green-600 rounded cursor-pointer hover:scale-105 duration-100">
+          3
+        </button>
+            <button class="text-white font-bold size-11 bg-orange-400 rounded cursor-pointer hover:scale-105 duration-100">
+          -
+        </button>
+        </div>
+
+        <div class="flex justify-around p-2">
+            <button class="text-white font-bold size-11 bg-red-600 rounded cursor-pointer hover:scale-105 duration-100" id="delete">
+          DEL
+        </button>
+            <button class="text-white font-bold size-11 bg-green-600 rounded cursor-pointer hover:scale-105 duration-100">
+          0
+        </button>
+            <button class="text-white font-bold size-11 bg-gray-400 rounded cursor-pointer hover:scale-105 duration-100">
+          .
+        </button>
+            <button class="text-white font-bold size-11 bg-blue-700 rounded cursor-pointer hover:scale-105 duration-100" id="equal">
+          =
+        </button>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
